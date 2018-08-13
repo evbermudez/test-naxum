@@ -20,14 +20,11 @@ print_html_body_section();
 
 #subroutines
 sub print_page_header {
-    # Print the HTML header (don't forget TWO newlines!)
     print "Content-type:  text/html\n\n";
 }
 
 sub print_html_head_section {
-    # Include stylesheet 'pm.css', jQuery library,
-    # and javascript 'pm.js' in the <head> of the HTML.
-    ##
+
     print "<head>\n";
     print "<link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css' integrity='sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO' crossorigin='anonymous'>\n";
     print "<link rel='stylesheet' href='css/style.css'>\n";
@@ -89,7 +86,7 @@ sub print_html_body_section{
             # print "count: " . $count;
             # print "passed user: " . $passed_user;
             # print "passed user id: " . $passed_user_id;
-        #skip 1 user?
+            #skip 1 user?
             for (my $i = 2; $i < $count; ++$i) 
             {
                 
