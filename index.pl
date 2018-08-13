@@ -71,7 +71,7 @@ sub print_html_body_section{
         print "<div class='col'>";
         print "<h1>Click Users to See Info</h1>";
         #first user is the highest sponsor?
-        print "<ul><li><a tabindex='0' data-html='true' role='button' data-toggle='popover' data-trigger='focus' title='User Info' data-content='"."First Name:<b> ".$superupline->{fname}."</b><br>"."Last Name: <b>".$superupline->{lname}."</b><br>"."E-mail: <b>".$superupline->{email}."</b><br>"."Address: <b>".$superupline->{address}."</b><br>"."Day Phone: <b>".$superupline->{dayphone}."</b><br>"."Sponsor: <b>".$superupline->{sponsorid}."</b><br>"."' href='#' class='popover-dismiss'>". $superupline->{id} . "# ". $superupline->{site} ."</a></li>";
+        print "<ul><li><a tabindex='0' data-html='true' role='button' data-toggle='popover' data-trigger='focus' title='User Info' data-content='"."First Name:<b> ".$superupline->{fname}."</b><br>"."Last Name: <b>".$superupline->{lname}."</b><br>"."E-mail: <b>".$superupline->{email}."</b><br>"."Address: <b>".$superupline->{address}."</b><br>"."Day Phone: <b>".$superupline->{dayphone}."</b><br>"."Sponsor: <b>".$superupline->{sponsorid}."</b><br>"."' href='javascript:;' class='popover-dismiss'>". $superupline->{id} . "# ". $superupline->{site} ."</a></li>";
 
         print_downline($superupline, @users);
 
@@ -94,7 +94,7 @@ sub print_html_body_section{
                 if ($passed_user_id == $downline_info->{sponsorid})
                 {		
                     #print downline
-                    print "<ul><li><a tabindex='0' data-html='true' role='button' data-toggle='popover' data-trigger='focus' title='User Info' data-content='"."First Name:<b> ".$downline_info->{fname}."</b><br>"."Last Name: <b>".$downline_info->{lname}."</b><br>"."E-mail: <b>".$downline_info->{email}."</b><br>"."Address: <b>".$downline_info->{address}."</b><br>"."Day Phone: <b>".$downline_info->{dayphone}."</b><br>"."Sponsor: <b>".$downline_info->{sponsorid}."</b><br>"."' href='#' class='popover-dismiss'>". $downline_info->{id} . "# ". $downline_info->{site} ."</a></li>"; 
+                    print "<ul><li><a tabindex='0' data-html='true' role='button' data-toggle='popover' data-trigger='focus' title='User Info' data-content='"."First Name:<b> ".$downline_info->{fname}."</b><br>"."Last Name: <b>".$downline_info->{lname}."</b><br>"."E-mail: <b>".$downline_info->{email}."</b><br>"."Address: <b>".$downline_info->{address}."</b><br>"."Day Phone: <b>".$downline_info->{dayphone}."</b><br>"."Sponsor: <b>".$downline_info->{sponsorid}."</b><br>"."' href='javascript:;' class='popover-dismiss'>". $downline_info->{id} . "# ". $downline_info->{site} ."</a></li>"; 
                     print_downline($downline_info, @users);
                     print "</ul>";
                 }
