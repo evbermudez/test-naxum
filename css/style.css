@@ -1,0 +1,8 @@
+body{
+    background: url('../img/vault-boy.png') no-repeat bottom right;
+    background-size: 25%;
+    background-attachment: fixed;  
+}
+li{
+    height: 18px;
+}
